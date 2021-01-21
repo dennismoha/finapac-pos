@@ -1,0 +1,218 @@
+<%- include('./partials/header.ejs'); %>
+
+    the name is :
+
+    <main id="main">
+
+        <!-- ======= Breadcrumbs ======= -->
+        <section id="breadcrumbs" class="breadcrumbs">
+            <div class="container">
+
+                <div class="d-flex justify-content-between align-items-center">
+                    <h2>
+                        <%=name.toUpperCase() %> Details</h2>
+                    <ol>
+                        <li><a href="/">Home</a></li>
+                        <li id="top-crumbs">
+                            <%=name %>
+                        </li>
+                    </ol>
+                </div>
+
+            </div>
+        </section>
+        <!-- End Breadcrumbs -->
+        <main id="main">
+
+
+
+
+            <% if(name) {%>
+                <!-- ======= Trainngn Details Section ======= -->
+                <section id="training" class="portfolio-details">
+                    <div class="container">
+
+                        <div class="portfolio-details-container" data-aos="fade-up">
+
+                            <div class="owl-carousel portfolio-details-carousel">
+                                <img src="assets/img/training/training.jpg" class="img-fluid" alt="">
+                                <img src="assets/img/training/training2.jpg" class="img-fluid" alt="">
+                                <img src="assets/img/training/training3.jpg" class="img-fluid" alt="">
+                            </div>
+
+                            <div class="portfolio-info">
+                                <h3>Training Schedule</h3>
+                                <ul>
+                                    <li><strong>Morning</strong>:9:00 -11: 00 </li>
+                                    <li><strong>Afternoon</strong>: 12:00 - 2 :00</li>
+                                    <li><strong>Evenning</strong>: 3:00 - 5:00</li>
+
+                                </ul>
+                            </div>
+
+                        </div>
+
+                        <div class="portfolio-description">
+                            <h2>This is is the training section</h2>
+                            <p>
+                                Scheduled Training to a maximum of 6 hours (2 sessions of 3 hours OR 3 Sessions of 2 hours OR 6 Sessions of 1 hour) will be done at no extra cost during implementation. <br><em>(Any further Scheduled Training shall be charged at Kshs. 1,000/= per person per hour)</em>
+                            </p>
+                            <h3>Implementation:</h3>
+                            <p>Implementation including data cleaning and training should take a maximum of 5 working days, if no changes on the system are requested.</p>
+                        </div>
+
+                    </div>
+                </section>
+                <!--End of Training-->
+
+                <% }else if(name === 'installation'){%>
+                    <!--Installation-->
+                    <section id="installation" class="portfolio-details">
+                        <div class="container">
+
+                            <div class="portfolio-details-container" data-aos="fade-up">
+
+                                <div class="owl-carousel portfolio-details-carousel">
+                                    <img src="assets/img/training/installation.jpg" class="img-fluid" alt="">
+                                    <img src="assets/img/training/posbox_setup.png" class="img-fluid" alt="">
+                                    <img src="assets/img/training/square-register-hardware-setup.2.jpg" class="img-fluid" alt="">
+                                </div>
+
+                                <div class="portfolio-info">
+                                    <h3>Installtion information</h3>
+                                    <ul>
+                                        <li><strong>Amount</strong>: available on consultation.</li>
+                                        <li><strong>Duration </strong>: 1day</li>
+                                        <li><strong>Installation date</strong>: </li>
+                                    </ul>
+                                </div>
+
+                            </div>
+
+                            <div class="portfolio-description">
+                                <h2>Installation guidelines</h2>
+                                <ul>
+                                    <li>Costs are available on consultation.</li>
+                                    <li>One computer is enough to act as both server and client/user, depending on size of the premises..</li>
+
+                                </ul>
+                                <h3>Every extra Server/Client Computer</h3>
+                                <ul>
+                                    <li><strong>Costs are available on consultation.</strong></li>
+                                    <li>
+                                        <p>This cost, is regardless of whether installation is done at the same premises or not, as long as business shares the same PIN.</p>
+                                    </li>
+                                </ul>
+                                <p>
+                                    <strong>(Installations outside Nairobi will attract extra charges depending on distance from Nairobi)</strong>
+                                </p>
+                                <p>Software Payment Terms: (4 Installments) 25% On Order, 25% after 30 days 25% after 60 days and 25% after 90 days</p>
+                            </div>
+
+                        </div>
+                    </section>
+                    <!--end of installation-->
+
+                    <% }else if(name === 'hardware'){%>
+                        <!--hardware-->
+                        <section id="hardware" class="portfolio-details">
+                            <div class="container">
+
+                                <div class="portfolio-details-container" data-aos="fade-up">
+
+                                    <div class="owl-carousel portfolio-details-carousel">
+                                        <img src="assets/img/training/posbox_setup.png" class="img-fluid" alt="" style="height: 700px; width: 700px;">
+                                        <img src="assets/img/training/square-register-hardware-setup.2.jpg" class="img-fluid" alt="" style="height: 700px; width: 700px;">
+                                        <img src="assets/img/training/gst-pos-system-hp-i3-17-touch-screen-pos-economic-pc-set-poslink-1705-25-poslink@1.jpg" class="img-fluid" alt="" style="height: 700px; width: 700px;">
+                                    </div>
+
+                                    <div class="portfolio-info">
+                                        <h3>Hardware Requirements information</h3>
+                                        <ul>
+                                            <li><strong>Costs</strong>: ...</li>
+
+                                        </ul>
+                                    </div>
+
+                                </div>
+
+                                <div class="portfolio-description">
+                                    <h2>Hardware information</h2>
+                                    <p>FINAPAC is designed To work on : </p>
+                                    <ul>
+                                        <li><i class="ri-check-line" style="color: gold;"></i>To work on a network with low-end computer systems</li>
+                                        <li><i class="ri-check-line" style="color: gold;"></i>Works with any bar code scanners</li>
+                                        <li><i class="ri-check-line" style="color: gold;"></i>Configured to work with Non-Fiscal thermal, LaserJet and dot matrix printers as well as with <span class="inners">(KRA) Fiscal thermal printer</span>and
+                                            <span class="inners">(KRA) Electronic
+                                                    </span>
+                                        </li>
+                                        <li><i class="ri-check-line" style="color: gold;"></i>Signature Devices (ESD).</li>
+                                        <li><i class="ri-check-line" style="color: gold;"></i>Customer POS display stand Touch Screen Interface suitable for restaurants</li>
+                                    </ul>
+                                </div>
+
+                            </div>
+                        </section>
+                        <!--end of hardware-->
+
+                        <% }else if(name === 'system'){%>
+                            <!--system-->
+                            <section id="system" class="portfolio-details">
+                                <div class="container">
+
+                                    <div class="portfolio-details-container" data-aos="fade-up">
+
+                                        <div class="owl-carousel portfolio-details-carousel">
+                                            <img src="assets/img/training/scanner.gif" class="img-fluid" alt="" style="height: 700px; width: 700px;">
+                                            <img src="assets/img/training/scanner2.gif" class="img-fluid" alt="" style="height: 700px; width: 700px;">
+                                            <img src="assets/img/training/chart1.jpg" class="img-fluid" alt="" style="height: 700px; width: 700px;">
+                                        </div>
+
+                                        <div class="portfolio-info">
+                                            <h3>System features information</h3>
+                                            <ul>
+                                                <li><strong>More </strong>: Features</li>
+                                            </ul>
+                                        </div>
+
+                                    </div>
+
+                                    <div class="portfolio-description">
+                                        <h2>All System features</h2>
+                                        <p>finapac has got the following features</p>
+                                        <ul>
+                                            <li><i class="ri-check-line" style="color: gold;"></i> Ability to create and print own bar codes for products without bar codes.</li>
+                                            <li><i class="ri-check-line" style="color: gold;"></i> Contains real time quick search for illegible barcodes and products without bar codes</li>
+                                            <li><i class="ri-check-line" style="color: gold;"></i> Real time stock monitoring with re-order level notifications.</li>
+                                            <li><i class="ri-check-line" style="color: gold;"></i> Real Time sales reporting between any time and Date, per product, category, customer and sales persons</li>
+                                            <li><i class="ri-check-line" style="color: gold;"></i> Real Time general stock reporting and by product, brand, category, manufacturer and supplier.
+                                            </li>
+                                            <li><i class="ri-check-line" style="color: gold;"></i> Real Time Inventory re-order reports by product, brand, category and vender.</li>
+                                            <li><i class="ri-check-line" style="color: gold;"></i>Multiple, open, fixed and pre-defined prices.</li>
+                                            <li><i class="ri-check-line" style="color: gold;"></i> Multiple Product Codes.</li>
+                                            <li><i class="ri-check-line" style="color: gold;"></i> Well managed user access roles and policies.</li>
+                                            <li><i class="ri-check-line" style="color: gold;"></i> Ability to monitor stock without closing premises for stock taking</li>
+                                            <li><i class="ri-check-line" style="color: gold;"></i> Customer details management</li>
+
+                                        </ul>
+                                    </div>
+
+                                </div>
+                            </section>
+                            <!--end of system-->
+
+                            <% }else {%>
+                                no data
+                                <% }%>
+
+
+
+
+
+
+                                    <!-- End Portfolio Details Section -->
+
+        </main>
+        <!-- End #main -->
+
+        <%- include('./partials/footer.ejs'); %>
